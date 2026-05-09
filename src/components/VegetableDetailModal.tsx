@@ -37,14 +37,14 @@ export function VegetableDetailModal({ vegetable, onClose }: Props) {
       <button
         type="button"
         aria-label="閉じる（背景）"
-        className="absolute inset-0 bg-black/50 backdrop-blur-md"
+        className="modal-overlay-enter absolute inset-0 bg-black/65 backdrop-blur-sm"
         onClick={onClose}
       />
       <div
         role="dialog"
         aria-modal="true"
         aria-labelledby={titleId}
-        className="relative z-10 flex h-full min-h-0 w-full max-h-full flex-col overflow-hidden bg-white sm:h-auto sm:max-h-[90vh] sm:max-w-lg sm:rounded-lg sm:shadow-xl"
+        className="modal-panel-enter relative z-10 flex h-full min-h-0 w-full max-h-full flex-col overflow-hidden bg-white shadow-2xl sm:h-auto sm:max-h-[90vh] sm:max-w-lg sm:rounded-lg"
       >
         <div className="relative shrink-0 border-b border-neutral-200">
           <div className="aspect-video max-h-[38vh] w-full overflow-hidden bg-neutral-100 sm:max-h-[40vh]">

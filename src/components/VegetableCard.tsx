@@ -22,11 +22,11 @@ export function VegetableCard({ vegetable, onOpen }: Props) {
         />
         <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent" />
       </div>
-      <div className="flex flex-1 flex-col gap-1 px-4 pb-4 pt-3">
-        <h2 className="line-clamp-2 text-base font-semibold text-emerald-950">
+      <div className="flex flex-1 flex-col gap-1 px-3 pb-3 pt-2.5 sm:px-4 sm:pb-4 sm:pt-3">
+        <h2 className="line-clamp-2 text-sm font-semibold text-emerald-950 sm:text-base">
           {vegetable.名前}
         </h2>
-        <p className="text-sm text-emerald-800/75">{vegetable.属}</p>
+        <p className="text-xs text-emerald-800/75 sm:text-sm">{vegetable.属}</p>
       </div>
     </button>
   );

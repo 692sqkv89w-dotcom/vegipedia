@@ -70,7 +70,7 @@ export default function App() {
             <p className="mb-4 text-sm text-emerald-800/65">
               {filtered.length} 件を表示
             </p>
-            <ul className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            <ul className="grid grid-cols-2 gap-3 sm:gap-4 md:grid-cols-3 lg:gap-6 xl:grid-cols-4">
               {filtered.map((v) => (
                 <li key={v.id}>
                   <VegetableCard vegetable={v} onOpen={setSelected} />
@@ -85,10 +85,6 @@ export default function App() {
         vegetable={selected}
         onClose={() => setSelected(null)}
       />
-
-      <footer className="border-t border-emerald-900/10 bg-white/60 py-8 text-center text-xs text-emerald-800/55">
-        データは提供スプレッドシートに基づくサンプルです
-      </footer>
     </div>
   );
 }
