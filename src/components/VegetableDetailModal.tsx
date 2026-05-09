@@ -78,13 +78,13 @@ export function VegetableDetailModal({ vegetable, onClose }: Props) {
 
           <div className="mt-8 space-y-8 border-t border-neutral-200 pt-8">
             <div>
-              <h3 className="text-sm font-medium text-neutral-600">語源</h3>
+              <h3 className="text-sm font-semibold text-neutral-600">語源</h3>
               <p className="mt-2 text-[15px] leading-relaxed text-neutral-800">
                 {vegetable.語源}
               </p>
             </div>
             <div>
-              <h3 className="text-sm font-medium text-neutral-600">説明</h3>
+              <h3 className="text-sm font-semibold text-neutral-600">説明</h3>
               <p className="mt-2 text-[15px] leading-relaxed text-neutral-800">
                 {vegetable.説明}
               </p>
